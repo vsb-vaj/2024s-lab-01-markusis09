@@ -91,16 +91,3 @@ const printNumsMultipliedBy2 = (numbers) => {
   // Your code:
   console.log(numbers.map((number) => number * 2));
 };
-
-printArray(numbers);
-printLength(numbers);
-printFirstItem(numbers);
-printLastItem(numbers);
-printLargestItem(numbers);
-printSmallestItem(numbers);
-printSum(numbers);
-printSALDifference(numbers);
-printAverage(numbers);
-printLargestsIndex(numbers);
-printEvenNums(numbers);
-printNumsMultipliedBy2(numbers);

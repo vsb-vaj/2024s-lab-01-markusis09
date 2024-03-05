@@ -7,7 +7,12 @@
 
 // Your code:
 const arrayOfMultiples = (num, length) => {
-    // ... write code ...
+  // ... write code ...
+  let multiples = [];
+  for (let i = 0; i < length; i = i + 1) {
+    multiples.push(num * (i + 1));
+  }
+  return multiples;
 };
 
 // 2 =================================
@@ -20,7 +25,16 @@ const arrayOfMultiples = (num, length) => {
 
 // Your code:
 const changeDirection = (array) => {
-// ... write code ...
+  // ... write code ...
+
+  //return array.reverse();
+
+  for (let i = 0; i < array.length / 2; i = i + 1) {
+    let tmp = array[i];
+    array[i] = array[array.length - 1 - i];
+    array[array.length - 1 - i] = tmp;
+  }
+  return array;
 };
 
 // 3 =================================
@@ -31,5 +45,12 @@ const changeDirection = (array) => {
 
 // Your code:
 const biggerArray = (array1, array2) => {
-// ... write code ...
+  // ... write code ...
+  let sum1 = array1.reduce((a, b) => a + b, 0);
+  let sum2 = array2.reduce((a, b) => a + b, 0);
+  if (sum1 > sum2) {
+    return { array: array1, sum: sum1 };
+  } else {
+    return { array: array2, sum: sum2 };
+  }
 };
